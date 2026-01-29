@@ -25,4 +25,8 @@ public class WaitUtils {
         WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
+    public static WebElement waitForNestedElement(WebElement element, By locator) {
+        WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
+        return wait.until(ExpectedConditions.presenceOfNestedElementLocatedBy(element, locator));
+    }
 }
