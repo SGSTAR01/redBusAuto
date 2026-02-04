@@ -5,11 +5,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.subham.pages.HomePage;
+import org.subham.pages.ResultPage;
 import org.subham.utils.ConfigReader;
 import org.testng.Assert;
 
 public class BookingSteps {
     HomePage homePage = new HomePage();
+    ResultPage resultPage = new ResultPage();
+
     @Given("the user launches the RedBus application")
     public void the_user_launches_the_red_bus_application() {
         homePage.openSite(ConfigReader.get("baseUrl"));
@@ -45,33 +48,29 @@ public class BookingSteps {
         homePage.searchBuses();
     }
 
-//    @Then("the list of available buses should be displayed")
-//    public void the_list_of_available_buses_should_be_displayed() {
-//
-//    }
-//
-//    @When("the user selects a bus from the search results")
-//    public void the_user_selects_a_bus_from_the_search_results() {
-//
-//    }
-//
-//    @And("the user clicks on view seats")
-//    public void the_user_clicks_on_view_seats() {
-//
-//    }
-//
-//    @Then("the seat layout should be displayed")
-//    public void the_seat_layout_should_be_displayed() {
-//
-//    }
-//
-//    @When("the user selects an available seat")
-//    public void the_user_selects_an_available_seat() {
-//
-//    }
-//
-//    @Then("the seat should be marked as selected.")
-//    public void the_seat_should_be_marked_as_selected() {
-//
-//    }
+    @Then("the list of available buses should be displayed")
+    public void the_list_of_available_buses_should_be_displayed() {
+        Assert.assertTrue(resultPage.isResultsDisplayed());
+
+    }
+
+    @When("the user selects a bus from the search results")
+    public void the_user_selects_a_bus_from_the_search_results() {
+        resultPage.selectBus(1);
+    }
+
+    @Then("the seat layout should be displayed")
+    public void the_seat_layout_should_be_displayed() {
+        Assert.assertTrue(resultPage.isSeatLayoutDisplayed());
+    }
+
+    @When("the user selects an available seat")
+    public void the_user_selects_an_available_seat() {
+        resultPage.selectSeat(1);
+    }
+
+    @Then("the seat should be marked as selected.")
+    public void the_seat_should_be_marked_as_selected() {
+        Assert.assertTrue(resultPage.isSeatSelected(1));
+    }
 }

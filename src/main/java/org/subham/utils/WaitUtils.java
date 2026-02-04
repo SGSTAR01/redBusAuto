@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.subham.base.BasePage;
 
 import java.time.Duration;
+import java.util.List;
 
 public class WaitUtils {
     public static void waitForVisible(WebElement element) {
@@ -28,5 +29,9 @@ public class WaitUtils {
     public static WebElement waitForNestedElement(WebElement element, By locator) {
         WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
         return wait.until(ExpectedConditions.presenceOfNestedElementLocatedBy(element, locator));
+    }
+    public static void waitForAllElements(List<WebElement> elements) {
+        WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.visibilityOfAllElements(elements));
     }
 }

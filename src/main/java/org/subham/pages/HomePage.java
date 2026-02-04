@@ -13,8 +13,6 @@ import java.util.List;
 
 public class HomePage {
 
-    @FindBy(xpath = "//*[@id=\"root\"]/main/div/div/div[2]/search/div/div/div[1]/div[1]/div[1]/div[1]")
-    private WebElement fromCityWrapper;
     @FindBy(id = "srcinput")
     private WebElement fromCityInput;
     @FindBy(id = "destinput")
@@ -48,14 +46,12 @@ public class HomePage {
 
     public boolean isHomePageLoaded() {
 
-            WaitUtils.waitForVisible(fromCityWrapper);
+            WaitUtils.waitForVisible(fromCityInput);
             return fromCityInput.isDisplayed();
 
     }
 
     public void enterFromCityInput(String fromCity)  {
-        WaitUtils.waitForClickable(fromCityWrapper);
-        fromCityWrapper.click();
         WaitUtils.waitForVisible(fromCityInput);
         fromCityInput.clear();
         fromCityInput.sendKeys(fromCity);
@@ -84,6 +80,7 @@ public class HomePage {
         WaitUtils.waitForClickable(dateSelector);
         dateSelector.click();
         while (true) {
+            WaitUtils.waitForVisible(monthYearSelector);
             String currentText = monthYearSelector.getText();
             if (currentText.contains(monthAndYear)) {
                 break;
