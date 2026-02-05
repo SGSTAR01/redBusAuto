@@ -62,6 +62,7 @@ public class BookingSteps {
     @Then("the seat layout should be displayed")
     public void the_seat_layout_should_be_displayed() {
         Assert.assertTrue(resultPage.isSeatLayoutDisplayed());
+        resultPage.printSeatStatus();
     }
 
     @When("the user selects an available seat")

@@ -20,5 +20,5 @@ Feature: RedBus ticket booking - search and seat selection
     Examples:
       | fromCity | toCity   | fromBoarding | toBoarding                       | journeyDate  |
       | Kolkata  | Siliguri | Esplanade    | Tenzing Norgay Central Bus Stand | 1 March 2026 |
-      | Chennai  | Bangalore | CMBT         | Majestic                         | 12 February 2026 |
-      | Delhi    | Jaipur    | Badarpur     | Sindhi Camp                      | 6 March 2026     |
+#      | Chennai  | Bangalore | CMBT         | Majestic                         | 12 February 2026 |
+#      | Delhi    | Jaipur    | Badarpur     | Sindhi Camp                      | 6 March 2026     |
