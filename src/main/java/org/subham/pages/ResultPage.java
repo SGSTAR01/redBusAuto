@@ -2,9 +2,8 @@ package org.subham.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.subham.base.BasePage;
+import org.subham.locators.ResultPageLocators;
 import org.subham.utils.ScrollUtils;
 import org.subham.utils.WaitUtils;
 import org.slf4j.Logger;
@@ -18,26 +17,17 @@ public class ResultPage {
     private static final Logger logger = LoggerFactory.getLogger(ResultPage.class);
     private final WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"searchContentWrap\"]//ul/li")
-    private List<WebElement> resultList;
-
-    @FindBy(xpath = "//*[@id=\"seat-canvas-wrapper\"]/div[2]/div")
-    private WebElement seatLayout;
-
-    @FindBy(xpath = "//*[@id=\"seat-canvas-wrapper\"]//span[contains(@aria-label,'Seat number')]")
-    private List<WebElement> seats;
-
     public ResultPage() {
         driver = BasePage.getDriver();
-        PageFactory.initElements(driver, this);
     }
 
     public boolean isResultsDisplayed() {
-        WaitUtils.waitForAllElements(resultList);
+        List<WebElement> resultList = WaitUtils.waitForAllElements(ResultPageLocators.RESULT_LIST);
         return !resultList.isEmpty();
     }
 
     public void selectBus(int index) {
+        List<WebElement> resultList = WaitUtils.waitForAllElements(ResultPageLocators.RESULT_LIST);
         if(index >= 0 && index < resultList.size()) {
            WebElement result = resultList.get(index);
             ScrollUtils.scrollToElement(result);
@@ -46,12 +36,12 @@ public class ResultPage {
     }
 
     public boolean isSeatLayoutDisplayed() {
-        WaitUtils.waitForVisible(seatLayout);
+        WebElement seatLayout = WaitUtils.waitForVisible(ResultPageLocators.SEAT_LAYOUT);
         return seatLayout.isDisplayed();
     }
 
     public void printSeatStatus() {
-        WaitUtils.waitForAllElements(seats);
+        List<WebElement> seats = WaitUtils.waitForAllElements(ResultPageLocators.SEATS);
         int totalSeats = seats.size();
         int availableSeats = 0;
         int soldSeats = 0;
@@ -80,6 +70,7 @@ public class ResultPage {
     }
 
     public void selectSeat(int index) {
+        List<WebElement> seats = WaitUtils.waitForAllElements(ResultPageLocators.SEATS);
         WaitUtils.waitForVisible(seats.get(index));
         if(index < seats.size()) {
             WebElement seat = seats.get(index);
@@ -97,6 +88,7 @@ public class ResultPage {
 
 
     public boolean isSeatSelected(int index) {
+        List<WebElement> seats = WaitUtils.waitForAllElements(ResultPageLocators.SEATS);
         if(index < seats.size()) {
             WebElement seat = seats.get(index);
             return Boolean.parseBoolean(seat.getAttribute("aria-pressed"));

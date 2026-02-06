@@ -3,40 +3,18 @@ package org.subham.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.subham.base.BasePage;
+import org.subham.locators.HomePageLocators;
 import org.subham.utils.WaitUtils;
 
 import java.util.List;
 
 public class HomePage {
 
-    @FindBy(id = "srcinput")
-    private WebElement fromCityInput;
-    @FindBy(id = "destinput")
-    private WebElement toCityInput;
-    @FindBy(xpath = "//div[@role='listbox']")
-    private WebElement boardingContainer;
-    //Calender
-    @FindBy(xpath = "//div[contains(@aria-label,'Select Date of Journey.')]")
-    private WebElement dateSelector;
-    @FindBy(xpath = "//div[contains(@class,'monthArea')]")
-    private WebElement monthYearSelector;
-    @FindBy(xpath = "//i[contains(@aria-label,'Next month')]")
-    private WebElement nextButton;
-    @FindBy(xpath = "//ul[contains(@class,'datesWrap')]")
-    private WebElement allDays;
-
-    @FindBy(xpath = "//button[@aria-label='Search buses']")
-    private WebElement searchButton;
-
     private final WebDriver driver;
 
     public HomePage() {
         driver = BasePage.getDriver();
-        PageFactory.initElements(driver, this);
     }
 
 
@@ -45,29 +23,29 @@ public class HomePage {
     }
 
     public boolean isHomePageLoaded() {
-
-            WaitUtils.waitForVisible(fromCityInput);
-            return fromCityInput.isDisplayed();
+            WebElement element = WaitUtils.waitForVisible(HomePageLocators.FROM_CITY_INPUT);
+            return element.isDisplayed();
 
     }
 
     public void enterFromCityInput(String fromCity)  {
-        WaitUtils.waitForVisible(fromCityInput);
-        fromCityInput.clear();
-        fromCityInput.sendKeys(fromCity);
+        WebElement element = WaitUtils.waitForVisible(HomePageLocators.FROM_CITY_INPUT);
+        element.clear();
+        element.sendKeys(fromCity);
     }
 
     public void enterToCityInput(String toCity) {
-        WaitUtils.waitForClickable(toCityInput);
-        toCityInput.click();
-        toCityInput.clear();
-        toCityInput.sendKeys(toCity);
+        WebElement element = WaitUtils.waitForClickable(HomePageLocators.TO_CITY_INPUT);
+        element.click();
+        element.clear();
+        element.sendKeys(toCity);
     }
 
     public void selectBoardingPoint(String boardingPoint)  {
         String dynamicXpath = String.format(
                 "//div[contains(text(),'%s')]", boardingPoint
         );
+        WebElement boardingContainer = WaitUtils.waitForVisible(HomePageLocators.BOARDING_CONTAINER);
         WebElement boarding = WaitUtils.waitForNestedElement(boardingContainer,By.xpath(dynamicXpath));
         boarding.click();
     }
@@ -77,17 +55,18 @@ public class HomePage {
         String day = parts[0];
         String monthAndYear = parts[1] + " " + parts[2];
 
-        WaitUtils.waitForClickable(dateSelector);
+        WebElement dateSelector = WaitUtils.waitForClickable(HomePageLocators.DATE_SELECTOR);
         dateSelector.click();
         while (true) {
-            WaitUtils.waitForVisible(monthYearSelector);
+            WebElement monthYearSelector = WaitUtils.waitForVisible(HomePageLocators.MONTH_YEAR_SELECTOR);
             String currentText = monthYearSelector.getText();
             if (currentText.contains(monthAndYear)) {
                 break;
             }
+            WebElement nextButton = driver.findElement(HomePageLocators.NEXT_BUTTON);
             nextButton.click();
         }
-        WaitUtils.waitForClickable(allDays);
+        WebElement allDays = WaitUtils.waitForClickable(HomePageLocators.ALL_DAYS);
         String dynamicDatePath = String.format(
                 "//div[contains(@class,'calendarDate')]//span[text()='%s']", day
         );
@@ -100,8 +79,8 @@ public class HomePage {
     }
 
     public void searchBuses() {
-        WaitUtils.waitForClickable(searchButton);
-        searchButton.click();
+        WebElement element = WaitUtils.waitForClickable(HomePageLocators.SEARCH_BUTTON);
+        element.click();
     }
 
 }

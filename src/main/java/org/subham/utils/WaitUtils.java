@@ -14,14 +14,27 @@ public class WaitUtils {
         WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    public static WebElement waitForVisible(By locator) {
+        WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
     public static void waitForInvisible(WebElement element) {
         WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
+
     public static void waitForClickable(WebElement element) {
         WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+
+    public static WebElement waitForClickable(By locator) {
+        WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
     public static void waitForPresence(By locator) {
         WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
@@ -33,5 +46,9 @@ public class WaitUtils {
     public static void waitForAllElements(List<WebElement> elements) {
         WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+    }
+    public static List<WebElement> waitForAllElements(By locator) {
+        WebDriverWait wait = new WebDriverWait(BasePage.getDriver(), Duration.ofSeconds(30));
+        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
     }
 }
