@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="19.641" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="18.913" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/redBusAuto/redBusAuto/target/surefire/surefirebooter-20260205104032947_3.jar /home/runner/work/redBusAuto/redBusAuto/target/surefire 2026-02-05T10-40-32_859-jvmRun1 surefire-20260205104032947_1tmp surefire_0-20260205104032947_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/redBusAuto/redBusAuto/target/surefire/surefirebooter-20260206073020753_3.jar /home/runner/work/redBusAuto/redBusAuto/target/surefire 2026-02-06T07-30-20_640-jvmRun1 surefire-20260206073020753_1tmp surefire_0-20260206073020753_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/redBusAuto/redBusAuto/target/test-classes:/home/runner/work/redBusAuto/redBusAuto/target/classes:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-java/4.40.0/selenium-java-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-api/4.40.0/selenium-api-4.40.0.jar:/home/runner/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.40.0/selenium-chrome-driver-4.40.0.jar:/home/runner/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.40.0/selenium-chromium-driver-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-json/4.40.0/selenium-json-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.40.0/selenium-manager-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v142/4.40.0/selenium-devtools-v142-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v143/4.40.0/selenium-devtools-v143-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v144/4.40.0/selenium-devtools-v144-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.40.0/selenium-edge-driver-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.40.0/selenium-firefox-driver-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-http/4.40.0/selenium-http-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.40.0/selenium-ie-driver-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.40.0/selenium-remote-driver-4.40.0.jar:/home/runner/.m2/repository/com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar:/home/runner/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/home/runner/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.41.0/error_prone_annotations-2.41.0.jar:/home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-api/1.58.0/opentelemetry-api-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-context/1.58.0/opentelemetry-context-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-common/1.58.0/opentelemetry-common-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.58.0/opentelemetry-exporter-logging-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.58.0/opentelemetry-sdk-common-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.58.0/opentelemetry-sdk-extension-autoconfigure-spi-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.58.0/opentelemetry-sdk-extension-autoconfigure-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.58.0/opentelemetry-sdk-trace-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.58.0/opentelemetry-sdk-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.58.0/opentelemetry-sdk-metrics-1.58.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.58.0/opentelemetry-sdk-logs-1.58.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.18.4/byte-buddy-1.18.4.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-os/4.40.0/selenium-os-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.40.0/selenium-safari-driver-4.40.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-support/4.40.0/selenium-support-4.40.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-java/7.33.0/cucumber-java-7.33.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-core/7.33.0/cucumber-core-7.33.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-gherkin/7.33.0/cucumber-gherkin-7.33.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.33.0/cucumber-gherkin-messages-7.33.0.jar:/home/runner/.m2/repository/io/cucumber/gherkin/36.1.0/gherkin-36.1.0.jar:/home/runner/.m2/repository/io/cucumber/messages/30.1.0/messages-30.1.0.jar:/home/runner/.m2/repository/io/cucumber/pretty-formatter/2.4.1/pretty-formatter-2.4.1.jar:/home/runner/.m2/repository/io/cucumber/query/14.7.0/query-14.7.0.jar:/home/runner/.m2/repository/io/cucumber/teamcity-formatter/0.2.0/teamcity-formatter-0.2.0.jar:/home/runner/.m2/repository/io/cucumber/testng-xml-formatter/0.7.0/testng-xml-formatter-0.7.0.jar:/home/runner/.m2/repository/io/cucumber/usage-formatter/0.1.0/usage-formatter-0.1.0.jar:/home/runner/.m2/repository/io/cucumber/tag-expressions/8.1.0/tag-expressions-8.1.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/home/runner/.m2/repository/io/cucumber/cucumber-json-formatter/0.3.2/cucumber-json-formatter-0.3.2.jar:/home/runner/.m2/repository/io/cucumber/datatable/7.33.0/datatable-7.33.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-plugin/7.33.0/cucumber-plugin-7.33.0.jar:/home/runner/.m2/repository/io/cucumber/docstring/7.33.0/docstring-7.33.0.jar:/home/runner/.m2/repository/io/cucumber/html-formatter/22.2.0/html-formatter-22.2.0.jar:/home/runner/.m2/repository/io/cucumber/junit-xml-formatter/0.11.0/junit-xml-formatter-0.11.0.jar:/home/runner/.m2/repository/io/cucumber/ci-environment/12.0.0/ci-environment-12.0.0.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/home/runner/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/home/runner/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/runner/.m2/repository/io/cucumber/cucumber-testng/7.33.0/cucumber-testng-7.33.0.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.5.13/logback-classic-1.5.13.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.5.13/logback-core-1.5.13.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/redBusAuto/redBusAuto/target/surefire/surefirebooter-20260205104032947_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/redBusAuto/redBusAuto/target/surefire/surefirebooter-20260206073020753_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.18+8"/>
     <property name="user.name" value="runner"/>
@@ -53,11 +53,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Search buses and select an available seat&quot;, &quot;RedBus ticket booking - search and seat selection&quot;](1)" classname="com.subham.runners.TestRunner" time="18.626">
+  <testcase name="runScenario[&quot;Search buses and select an available seat&quot;, &quot;RedBus ticket booking - search and seat selection&quot;](1)" classname="com.subham.runners.TestRunner" time="17.764">
     <system-out><![CDATA[
 &amp#27;[1mScenario Outline:&amp#27;[22m Search buses and select an available seat                         &amp#27;[90m# src/test/resources/features/redbus_booking.feature:22&amp#27;[39m
-10:40:34 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - Initializing ChromeDriver...
-10:40:41 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - ChromeDriver initialized and set in ThreadLocal.
+07:30:22 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - Initializing ChromeDriver...
+07:30:28 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - ChromeDriver initialized and set in ThreadLocal.
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mthe user launches the RedBus application&amp#27;[39m                                  &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_user_launches_the_red_bus_application()&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mthe user is on the RedBus home page&amp#27;[39m                                         &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_user_is_on_the_red_bus_home_page()&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mthe user enters the source city as &amp#27;[1m"Kolkata"&amp#27;[22m&amp#27;[39m                               &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_user_enters_the_source_city_as(java.lang.String)&amp#27;[39m
@@ -68,56 +68,56 @@
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mthe user clicks on the search buses button&amp#27;[39m                                  &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_user_clicks_on_the_search_buses_button()&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mthe list of available buses should be displayed&amp#27;[39m                            &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_list_of_available_buses_should_be_displayed()&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mthe user selects a bus from the search results&amp#27;[39m                             &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_user_selects_a_bus_from_the_search_results()&amp#27;[39m
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB1W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB2 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB3 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB7W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB8 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB9 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB13W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB14 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB15 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB19W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB20 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB21 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB25W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB26 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB27 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB31W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB32 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB33 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB37W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB38 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB39 is sold
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB6W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB5 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB4 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB12W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB11 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB10 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB18W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB17 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB16 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB24W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB23 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB22 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB30W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB29 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB28 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB36W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB35 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB34 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB42W is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB41 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB40 is available
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - 42 total seats
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - 1 sold seats
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - 41 available seats
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB1W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB2 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB3 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB7W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB8 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB9 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB13W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB14 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB15 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB19W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB20 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB21 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB25W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB26 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB27 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB31W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB32 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB33 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB37W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB38 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:LB39 is sold
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB6W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB5 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB4 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB12W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB11 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB10 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB18W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB17 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB16 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB24W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB23 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB22 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB30W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB29 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB28 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB36W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB35 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB34 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB42W is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB41 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - Seat number:UB40 is available
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - 42 total seats
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - 1 sold seats
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.pages.ResultPage - 41 available seats
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mthe seat layout should be displayed&amp#27;[39m                                        &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_seat_layout_should_be_displayed()&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mthe user selects an available seat&amp#27;[39m                                         &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_user_selects_an_available_seat()&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mthe seat should be marked as selected.&amp#27;[39m                                     &amp#27;[90m# com.subham.stepdefinitions.BookingSteps.the_seat_should_be_marked_as_selected()&amp#27;[39m
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - Quitting ChromeDriver...
-10:40:52 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - ChromeDriver quit and removed from ThreadLocal.
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - Quitting ChromeDriver...
+07:30:39 [TestNG-test-RedBus Booking Test-1] INFO  org.subham.base.DriverFactory - ChromeDriver quit and removed from ThreadLocal.
 ]]></system-out>
   </testcase>
 </testsuite>
