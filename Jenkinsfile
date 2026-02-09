@@ -33,10 +33,19 @@ pipeline {
             // Publish JUnit/TestNG test results
             junit 'target/surefire-reports/*.xml'
 
-            // Archive the Cucumber HTML report and TestNG reports
-            archiveArtifacts artifacts: 'target/cucumber-report.html, target/surefire-reports/**/*.html', allowEmptyArchive: true
+            // Archive the Cucumber HTML report, TestNG reports, and Extent Report
+            archiveArtifacts artifacts: 'target/cucumber-report.html, target/surefire-reports/**/*.html, test-output/Spark.html', allowEmptyArchive: true
+
+            // Publish Extent Report in Jenkins using HTML Publisher Plugin
+            publishHTML (target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'test-output',
+                reportFiles: 'Spark.html',
+                reportName: 'Extent Report',
+                reportTitles: 'RedBus Automation Extent Report'
+            ])
         }
     }
 }
-
-

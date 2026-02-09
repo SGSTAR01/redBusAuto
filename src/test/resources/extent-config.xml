@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <theme>STANDARD</theme>
+    <documentTitle>RedBus Automation Report</documentTitle>
+    <reportName>RedBus Booking Test Report</reportName>
+</configuration>

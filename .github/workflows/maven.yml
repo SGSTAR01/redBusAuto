@@ -32,6 +32,13 @@ jobs:
         name: surefire-reports
         path: target/surefire-reports
 
+    - name: Upload Extent Report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: extent-report
+        path: test-output/Spark.html
+
     - name: Deploy to GitHub Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v3
